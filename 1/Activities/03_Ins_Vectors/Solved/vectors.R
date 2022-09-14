@@ -36,7 +36,8 @@ precipitation_summary["Min."]
 precipitation_summary["Mean"]
 
 # Use pipe operators to express a sequence of operations
-precipitation %>% summary()
+precipitation %>% summary() 
+
 
 # Use double brackets to access only the value
 precipitation_summary[["Max."]]
@@ -50,7 +51,7 @@ stdev <- sd(precipitation)
 round(stdev, 2)
 
 # Standard deviation and round using the pipe operator
-precipitation %>% sd()
+precipitation %>% sd() %>% round(2)
 3.141592653 %>% round(2)
 
 # A few more methods

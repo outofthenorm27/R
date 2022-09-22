@@ -27,13 +27,22 @@ presidents[1]
 
 ### Combine vectors into a single vector
 combined_vector <- c(disney_characters, presidents)
-combined_vector
+length(combined_vector)
+combined_vector[7]
 
 ### A for-loop
 for (x in combined_vector) {
-  print(x)
+print(x)
+print(x)
+print(x)
 }
   
+
+# {} = dictionary or JSON
+# [] = list or array
+# () = tuple
+
+
 # Operate over an entire vector en masse
 numeric_vector <- 1:length(combined_vector)
 squared_vector <- numeric_vector**2
@@ -53,6 +62,10 @@ for (prez in presidents) {
   }
 }
 
+for i in presidents:
+  print(i)
+
+
 # A list, unlike a vector, can contain various data types
 random_list <- list("movies"=c("Star Wars", "Titanic", "Avatar"),
                     "states"=c("California", "Oklahoma", "Texas", "Virginia"),
@@ -61,6 +74,8 @@ random_list <- list("movies"=c("Star Wars", "Titanic", "Avatar"),
                     "nums"=c(1,2,3,4,5),
                     "bools"=c(T,F,T,T,T,F)
 )
+
+print(random_list)
 
 # We can use the bracket notation to access an item in a list:
 random_list["states"]

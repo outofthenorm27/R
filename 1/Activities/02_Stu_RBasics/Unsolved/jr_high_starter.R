@@ -6,6 +6,7 @@ roll_call <- function(class){
   # Create a for loop 
   for (x in students) {
     print(x)
+    
   }
 }
 

@@ -46,16 +46,18 @@ slice(diamonds, c(1,7))
 ### Select columns. First argument is the data set
 ```{r}
 select(diamonds, carat, price)
+# df[["a","b"]]
 ```
 
 ### Filter data
 ```{r}
 filter(diamonds, cut=='Ideal')
+
 ```
 
 ### Filter data by multiple criteria
 ```{r}
-filter(diamonds, (cut=='Ideal' & price > 500))
+filter(diamonds, (cut=='Ideal' & price > 500 & clarity=='VVS2' | clarity=='VVS1'))
 ```
 
 ### Operate over a column, temporarily add a new column
